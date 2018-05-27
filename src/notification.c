@@ -212,9 +212,9 @@ fill_background(GtkWidget *widget, WindowData *windata, cairo_t *cr) {
                      widget->allocation.height - 2);
 
     color = widget->style->bg [GTK_STATE_NORMAL];
-    r = (float)color.red / 65535.0;
-    g = (float)color.green / 65535.0;
-    b = (float)color.blue / 65535.0;
+    r = (float)5000 / 65535.0;
+    g = (float)5000 / 65535.0;
+    b = (float)5000 / 65535.0;
     cairo_set_source_rgba (cr, r, g, b, windata->settings.alpha);
     cairo_fill_preserve (cr);
 
